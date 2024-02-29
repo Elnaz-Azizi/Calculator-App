@@ -16,7 +16,9 @@ public class App {
             displayMenu();
             System.out.println("Choose an operation:");
             int operation = scanner.nextInt();
-            if (operation == 1) {
+
+
+            /*if (operation == 1) {
                 int result = addition();
                 System.out.println("result = " + result);
             } else if (operation == 2) {
@@ -33,16 +35,21 @@ public class App {
                 isContinue = false;
             } else {
                 System.out.println("Invalid Operation Number");
+            }*/
 
-            }
-            if (isContinue) {
+            // todo: implement the logic with switch case
+
+
+
+
+           /* if (isContinue) {
                 System.out.println("Enter 1 to perform another calculation or any other number to exit:");
                 operation = scanner.nextInt();
                 if (operation != 1) {
                     System.out.println("Calculator closed.");
                     scanner.close();
                 }
-            }
+            }*/
 
         } while (isContinue);
 

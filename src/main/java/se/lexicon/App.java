@@ -37,7 +37,6 @@ public class App {
                 System.out.println("Invalid Operation Number");
             }*/
 
-            // todo: implement the logic with switch case
 
             switch (operation) {
                 case 1:

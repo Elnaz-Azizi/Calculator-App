@@ -18,7 +18,7 @@ public class App {
             int operation = scanner.nextInt();
 
 
-            /*if (operation == 1) {
+            /*(operation == 1) {
                 int result = addition();
                 System.out.println("result = " + result);
             } else if (operation == 2) {
@@ -39,7 +39,31 @@ public class App {
 
             // todo: implement the logic with switch case
 
-
+            switch (operation) {
+                case 1:
+                    int result1 = addition();
+                    System.out.println("result: = " + result1);
+                    break;
+                case 2:
+                    int result2 = subtraction();
+                    System.out.println("result: = " + result2);
+                    break;
+                case 3:
+                    int result3 = multiplication();
+                    System.out.println("result: = " + result3);
+                    break;
+                case 4:
+                    int result4 = division();
+                    System.out.println("result: = " + result4);
+                    break;
+                case 5:
+                    System.out.println("Application closed");
+                    isContinue = false;
+                    break;
+                default:
+                    System.out.println("Invalid Operation Number");
+                    break;
+            }
 
 
            /* if (isContinue) {
@@ -52,6 +76,7 @@ public class App {
             }*/
 
         } while (isContinue);
+        scanner.close();
 
 
     }
